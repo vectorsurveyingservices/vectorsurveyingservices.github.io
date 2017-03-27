@@ -23,9 +23,9 @@
 </head>
 
 <body>
-	<div id="wrapper" class="container-fluid">
+	<a href="#" id="to-top"><i class="fa fa-chevron-up fa-2x"></i></a>
 		<header>
-			<nav class="navbar navbar-inverse">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
 			  <div class="container-fluid">
 				<div class="navbar-header">
 				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -55,7 +55,7 @@
 			</div>
 		</div>
 		
-		<section id="resources-content" class="copy">
+		<section id="resources-content" class="copy container-fluid expandUp">
 			<div class="row">
 				<div class="col-sm-6">
 					<h2> Ohio <abbr title="Geographic Information System">GIS</abbr> Resources </h2>
@@ -85,14 +85,13 @@
 
 			</div>
 		</section>
-	</div><!-- END wrapper -->
 		<footer>
 			<div class="row">
 				<!-- INFO -->
 				<div class="col-sm-4">
 					<h5> Contact Info </h5>
 					<p><i class="fa fa-phone">&nbsp;</i><a href="tel:1-440-865-8445"> (440) 865-8445 </a></p>
-					<p><i class="fa fa-envelope">&nbsp;</i><a href="mailto:vectorsurveying@yahoo.com"> vectorsurveying@yahoo.com </a></p>
+					<p><i class="fa fa-envelope-o">&nbsp;</i><a href="mailto:vectorsurveying@yahoo.com"> vectorsurveying@yahoo.com</a></p>
 					<address>
 						<p>
 							<i class="fa fa-map-marker">&nbsp;</i>
@@ -121,7 +120,7 @@
 						<i class="fa fa-facebook fa-2x"></i>
 					</a>
 					<a class="quick-connect" href="mailto:vectorsurveying@yahoo.com">
-						<i class="fa fa-envelope fa-2x"></i>
+						<i class="fa fa-envelope-o fa-2x"></i>
 					</a>
 				</div>
 			</div><!-- END FOOTER ROW -->
@@ -133,6 +132,7 @@
 				<h5> &copy; <span id="year"></span> Vector Surveying Services, LLC. - All Rights Reserved. </h5>
 			</div><!-- END COPYRIGHT -->
 		</footer> <!-- END FOOTER -->
+		<script src="js/toTop.js"></script>
 		<script src="js/getYear.js"></script>
 </body>
 </html>

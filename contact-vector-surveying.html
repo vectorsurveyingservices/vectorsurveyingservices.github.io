@@ -25,7 +25,7 @@
 <body>
 	<div id="wrapper" class="container-fluid">
 		<header>
-			<nav class="navbar navbar-inverse">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
 			  <div class="container-fluid">
 				<div class="navbar-header">
 				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -49,14 +49,11 @@
 			</nav>
 		</header>
 		
-		<div id="fold-img-wrapper">
-			<div id="fold-img">
-				<div id="map-overlay" onclick="style.pointerEvents='none'"></div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.2433244671392!2d-82.40831268457612!3d41.325321979269916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883a1293f2df0729%3A0x9055c8caf6af9930!2s12311+OH-113%2C+Wakeman%2C+OH+44889!5e0!3m2!1sen!2sus!4v1490129661906" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
+		<div id="fold-img-wrapper">	
+			<div id="google-map"></div>
 		</div>
 		
-		<section id="contact-content" class="copy">
+		<section id="contact-content" class="copy expandUp">
 			
 			<h1> Contact Us </h1>
 			
@@ -73,7 +70,7 @@
 					<p> <b> E-mail: </b><a href="mailto:vectorsurveying@yahoo.com"> vectorsurveying@yahoo.com </a></p>
 				</div>
 			</div>
-			<a id="contact-btn" href="surveying-quotes.html" class="btn">Request Quote</a>
+			<a href="surveying-quotes.html" class="action-btn">Request Quote</a>
 		</section>
 	
 	</div><!-- END wrapper -->
@@ -83,7 +80,7 @@
 			<div class="col-sm-4">
 				<h5> Contact Info </h5>
 				<p><i class="fa fa-phone">&nbsp;</i><a href="tel:1-440-865-8445"> (440) 865-8445 </a></p>
-				<p><i class="fa fa-envelope">&nbsp;</i><a href="mailto:vectorsurveying@yahoo.com"> vectorsurveying@yahoo.com </a></p>
+				<p><i class="fa fa-envelope-o">&nbsp;</i><a href="mailto:vectorsurveying@yahoo.com"> vectorsurveying@yahoo.com </a></p>
 				<address>
 					<p>
 						<i class="fa fa-map-marker">&nbsp;</i>
@@ -112,7 +109,7 @@
 					<i class="fa fa-facebook fa-2x"></i>
 				</a>
 				<a class="quick-connect" href="mailto:vectorsurveying@yahoo.com">
-					<i class="fa fa-envelope fa-2x"></i>
+					<i class="fa fa-envelope-o fa-2x"></i>
 				</a>
 			</div>
 		</div><!-- END FOOTER ROW -->
@@ -125,5 +122,30 @@
 			</div><!-- END COPYRIGHT -->
 		</footer> <!-- END FOOTER -->
 		<script src="js/getYear.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			var myCenter = new google.maps.LatLng(41.325322, -82.4083127);
+
+			function initialize() {
+			var mapProp = {
+			  center:myCenter,
+			  zoom:12,
+			  scrollwheel:false,
+			  draggable:false,
+			  disableDefaultUI: true,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+
+			var map = new google.maps.Map(document.getElementById("google-map"),mapProp);
+
+			var marker = new google.maps.Marker({
+			  position:myCenter,
+			  });
+
+			marker.setMap(map);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
 </body>
 </html>
