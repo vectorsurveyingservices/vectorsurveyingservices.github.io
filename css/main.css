@@ -374,7 +374,7 @@ span.glyphicon-chevron-left {
 		box-shadow: 0 0 0;
 		left: 0;
 		right: 0;
-		bottom: 50px;
+		bottom: 45px;
 		margin: auto;
 	}
 	
@@ -383,7 +383,6 @@ span.glyphicon-chevron-left {
 	}
 	
 	.carousel-inner {
-		max-width: 300px;
 		min-height: 100px;
 		margin: auto;
 	}
