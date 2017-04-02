@@ -58,7 +58,7 @@
 				Vector Surveying Services gladly provides free price estimates for any survey-related work that you may have. Please enter your name, e-mail address, the location of the property (address or lot number), and a brief description of the type of land survey you require. If you're trying to figure out which steps to take, or don't know which kind of survey you may need, then don't hesitate to call us or leave a message and we'll give you the guidance you seek! 
 			</p>
 			<hr/>
-			<form> 
+			<form action="https://formspree.io/vectorsurveying@yahoo" method="POST"> 
 				<div class="form-group">
 					<label for="name"> <span class="req">*</span>Name: </label>
 					<input class="form-control" name="name" type="name" required />
@@ -79,6 +79,7 @@
 					<label for="description"> <span class="req">*</span>Description: </label>
 					<textarea name="description" class="form-control"></textarea>
 				</div>
+				<input type="hidden" name="_next" value="message-sent.html"/>
 				<button class="action-btn" type="submit" style="border:none;">Submit Request</button>
 			</form>
 		</section>
