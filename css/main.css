@@ -225,6 +225,20 @@ footer hr{
 	height: 60px;
 }
 
+#main-content a {
+	color: #00aa00;
+	transition: color .3s;
+}
+
+#main-content a:hover {
+	color: #00cc00;
+}
+
+#main-content a:focus {
+	color: #00aa00;
+	text-decoration: none;
+}
+
 #service-area {
 	margin: auto
 }
