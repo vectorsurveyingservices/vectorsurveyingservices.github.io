@@ -275,7 +275,6 @@ span.glyphicon-chevron-left {
 }
 
 /* SERVICES */
-
 #services-content, #about-content { 
 	padding-top: 90px;
 	padding-bottom: 40px;
@@ -310,6 +309,19 @@ span.glyphicon-chevron-left {
 	resize: none;
 	max-width: 400px;
 	height: 100px;
+}
+
+/* MESSAGE SENT */
+#sent-text {
+	display: block;
+	padding-top: 90px;
+	text-align: center;
+}
+
+#sent-btn {
+	margin: 20px auto;
+	display: block;
+	width: 160px;
 }
 
 /* ABOUT */
