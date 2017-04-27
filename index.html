@@ -14,255 +14,8 @@
 	<link rel="manifest" href="favicons/manifest.json"/>
 	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5"/>
 	<meta name="theme-color" content="#ffffff"/>
-	<!-- CSS -->
-	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" onload="this.rel='stylesheet'"/>
-	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" onload="this.rel='stylesheet'"/>
-	<link rel="preload" href="css/main.css" as="style" onload="this.rel='stylesheet'"/>
-	<noscript>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
-		<link href="css/main.css" rel="stylesheet"/>
-	</noscript>
 	<!-- CRITICAL PATH CSS -->
 	<style>
-		body {
-		  font-family: "Century Gothic Regular", sans-serif;
-		}
-
-		h1,
-		h2 {
-		  font-family: "Calisto MT", serif;
-		}
-
-		#to-top {
-		  visibility: hidden;
-		  width: 60px;
-		  height: 60px;
-		  position: fixed;
-		  right: 20px;
-		  bottom: 20px;
-		  border-radius: 30px;
-		  background-color: #56b64f;
-		  box-shadow: 0 0 3px rgba(0,0,0,.5);
-		  color: #fff;
-		  padding-top: 12px;
-		  text-align: center;
-		  z-index: 999;
-		}
-
-		#to-top span {
-		  display: none;
-		}
-
-		.navbar {
-		  border-radius: 0;
-		  border-bottom: 0;
-		  margin-bottom: 0;
-		  background: url(../imgs/concrete-wall.jpg) repeat;
-		}
-
-		.navbar .container-fluid {
-		  max-width: 960px;
-		}
-
-		#nav-logo {
-		  margin-top: -10px;
-		  height: 40px;
-		}
-
-		.navbar li {
-		  text-shadow: 1px 1px 1px #000;
-		}
-
-		#fold-img-wrapper {
-		  padding-top: 50px;
-		  background-color: #ffffff;
-		  background-image: url(../imgs/topo-map.png);
-		  background-attachment: fixed;
-		}
-
-		#fold-img {
-		  position: relative;
-		  max-width: 960px;
-		  margin: auto;
-		}
-
-		#fold-img img {
-		  margin: auto;
-		}
-
-		.headline {
-		  font-size: 30px;
-		}
-
-		.copy {
-		  max-width: 960px;
-		  padding: 15px;
-		  margin: auto;
-		}
-
-		.row {
-		  margin: 0;
-		}
-
-		.action-btn {
-		  background-color: #56b64f;
-		  color: #fff;
-		  font-size: 18px;
-		  text-align: center;
-		  text-transform: uppercase;
-		  padding: 10px;
-		  border-radius: 4px;
-		  -webkit-box-shadow: 0 6px 0 #008800, 0 15px 20px rgba(0, 0, 0, .35);
-		  box-shadow: 0 6px 0 #008800, 0 15px 20px rgba(0, 0, 0, .35);
-		}
-
-		.carousel-fade .carousel-inner .item {
-		  opacity: 0;
-		}
-
-		.carousel-fade .carousel-inner .active {
-		  opacity: 1;
-		}
-
-		.carousel-fade {
-		  z-index: 2;
-		}
-
-		#request-btn {
-		  position: absolute;
-		  padding-top: 17px;
-		  bottom: 20px;
-		  left: 50px;
-		  width: 210px;
-		  height: 60px;
-		}
-
-		#main-content a {
-		  color: #00aa00;
-		}
-
-		#service-area {
-		  margin: auto;
-		}
-
-		.item {
-		  min-height: 80px;
-		}
-
-		.testimony {
-		  display: inline-block;
-		  max-width: 600px;
-		}
-
-		.client {
-		  display: block;
-		  padding-top: 10px;
-		  font-family: 'Calisto MT', serif;
-		  font-size: 14px;
-		}
-
-		@media screen and (max-width:767px) {
-		  button.navbar-toggle {
-			background-color: transparent;
-			border: none;
-		  }
-
-		  abbr[title] {
-			text-decoration: none;
-			border: none;
-		  }
-
-		  #request-btn {
-			background-color: rgba(0,0,0,.5);
-			border: 1px solid #00cc00;
-			box-shadow: 0 0 0;
-			left: 0;
-			right: 0;
-			bottom: 45px;
-			margin: auto;
-		  }
-
-		  .carousel-inner {
-			min-height: 100px;
-			margin: auto;
-		  }
-
-		  .item {
-			min-height: 120px;
-		  }
-
-		  .testimony {
-			max-width: 300px;
-		  }
-
-		  #to-top {
-			background-color: #56b64f;
-			padding-top: 5px;
-			box-shadow: 0 0 0;
-			right: 0px;
-			width: 15px;
-			height: 50px;
-			border-radius: 0px;
-			text-transform: uppercase;
-			font-size: 10px;
-		  }
-
-		  #to-top i {
-			display: none;
-		  }
-
-		  #to-top span {
-			display: inline;
-		  }
-		}
-
-		.expandUp {
-		  animation-name: expandUp;
-		  -webkit-animation-name: expandUp;
-		  animation-duration: .8s;
-		  -webkit-animation-duration: .8s;
-		  animation-timing-function: ease;
-		  -webkit-animation-timing-function: ease;
-		  visibility: visible !important;
-		}
-
-		@keyframes expandUp {
-		  0% {
-			transform: translateY(100%) scale(0.6) scaleY(0.5);
-		  }
-
-		  60% {
-			transform: translateY(-7%) scaleY(1.12);
-		  }
-
-		  75% {
-			transform: translateY(3%);
-		  }
-
-		  100% {
-			transform: translateY(0%) scale(1) scaleY(1);
-		  }
-		}
-
-		@-webkit-keyframes expandUp {
-		  0% {
-			-webkit-transform: translateY(100%) scale(0.6) scaleY(0.5);
-		  }
-
-		  60% {
-			-webkit-transform: translateY(-7%) scaleY(1.12);
-		  }
-
-		  75% {
-			-webkit-transform: translateY(3%);
-		  }
-
-		  100% {
-			-webkit-transform: translateY(0%) scale(1) scaleY(1);
-		  }
-		}
-
 		body {
 		  margin: 0;
 		}
@@ -747,7 +500,260 @@
 		.fa-chevron-up:before {
 		  content: "\f077";
 		}
+
+		body {
+		  font-family: "Century Gothic Regular", sans-serif;
+		}
+
+		h1,
+		h2 {
+		  font-family: "Calisto MT", serif;
+		}
+
+		#to-top {
+		  visibility: hidden;
+		  width: 60px;
+		  height: 60px;
+		  position: fixed;
+		  right: 20px;
+		  bottom: 20px;
+		  border-radius: 30px;
+		  background-color: #56b64f;
+		  box-shadow: 0 0 3px rgba(0,0,0,.5);
+		  color: #fff;
+		  padding-top: 12px;
+		  text-align: center;
+		  z-index: 999;
+		}
+
+		#to-top span {
+		  display: none;
+		}
+
+		.navbar {
+		  border-radius: 0;
+		  border-bottom: 0;
+		  margin-bottom: 0;
+		  background: url(../imgs/concrete-wall.jpg) repeat;
+		}
+
+		.navbar .container-fluid {
+		  max-width: 960px;
+		}
+
+		#nav-logo {
+		  margin-top: -10px;
+		  height: 40px;
+		}
+
+
+
+		.navbar li {
+		  text-shadow: 1px 1px 1px #000;
+		}
+
+
+
+		#fold-img-wrapper {
+		  padding-top: 50px;
+		  background-color: #ffffff;
+		  background-image: url(../imgs/topo-map.png);
+		  background-attachment: fixed;
+		}
+
+		#fold-img {
+		  position: relative;
+		  max-width: 960px;
+		  margin: auto;
+		}
+
+		#fold-img img {
+		  margin: auto;
+		}
+
+		.headline {
+		  font-size: 30px;
+		}
+
+		.copy {
+		  max-width: 960px;
+		  padding: 15px;
+		  margin: auto;
+		}
+
+		.row {
+		  margin: 0;
+		}
+
+		.action-btn {
+		  background-color: #56b64f;
+		  color: #fff;
+		  font-size: 18px;
+		  text-align: center;
+		  text-transform: uppercase;
+		  padding: 10px;
+		  border-radius: 4px;
+		  -webkit-box-shadow: 0 6px 0 #008800, 0 15px 20px rgba(0, 0, 0, .35);
+		  box-shadow: 0 6px 0 #008800, 0 15px 20px rgba(0, 0, 0, .35);
+		}
+
+
+
+		.carousel-fade .carousel-inner .item {
+		  opacity: 0;
+		}
+
+		.carousel-fade .carousel-inner .active {
+		  opacity: 1;
+		}
+
+		.carousel-fade {
+		  z-index: 2;
+		}
+
+		#request-btn {
+		  position: absolute;
+		  padding-top: 17px;
+		  bottom: 20px;
+		  left: 50px;
+		  width: 210px;
+		  height: 60px;
+		}
+
+		#main-content a {
+		  color: #00aa00;
+		}
+
+		#service-area {
+		  margin: auto;
+		}
+
+		.item {
+		  min-height: 80px;
+		}
+
+		.testimony {
+		  display: inline-block;
+		  max-width: 600px;
+		}
+
+		.client {
+		  display: block;
+		  padding-top: 10px;
+		  font-family: 'Calisto MT', serif;
+		  font-size: 14px;
+		}
+
+		@media screen and (max-width:767px) {
+		  button.navbar-toggle {
+			background-color: transparent;
+			border: none;
+		  }
+
+		  abbr[title] {
+			text-decoration: none;
+			border: none;
+		  }
+
+		  #request-btn {
+			background-color: rgba(0,0,0,.5);
+			border: 1px solid #00cc00;
+			box-shadow: 0 0 0;
+			left: 0;
+			right: 0;
+			bottom: 45px;
+			margin: auto;
+		  }
+
+		  .carousel-inner {
+			min-height: 100px;
+			margin: auto;
+		  }
+
+		  .item {
+			min-height: 120px;
+		  }
+
+		  .testimony {
+			max-width: 300px;
+		  }
+
+		  #to-top {
+			background-color: #56b64f;
+			padding-top: 5px;
+			box-shadow: 0 0 0;
+			right: 0px;
+			width: 15px;
+			height: 50px;
+			border-radius: 0px;
+			text-transform: uppercase;
+			font-size: 10px;
+		  }
+
+		  #to-top i {
+			display: none;
+		  }
+
+		  #to-top span {
+			display: inline;
+		  }
+		}
+
+		.expandUp {
+		  animation-name: expandUp;
+		  -webkit-animation-name: expandUp;
+		  animation-duration: .8s;
+		  -webkit-animation-duration: .8s;
+		  animation-timing-function: ease;
+		  -webkit-animation-timing-function: ease;
+		  visibility: visible !important;
+		}
+
+		@keyframes expandUp {
+		  0% {
+			transform: translateY(100%) scale(0.6) scaleY(0.5);
+		  }
+
+		  60% {
+			transform: translateY(-7%) scaleY(1.12);
+		  }
+
+		  75% {
+			transform: translateY(3%);
+		  }
+
+		  100% {
+			transform: translateY(0%) scale(1) scaleY(1);
+		  }
+		}
+
+		@-webkit-keyframes expandUp {
+		  0% {
+			-webkit-transform: translateY(100%) scale(0.6) scaleY(0.5);
+		  }
+
+		  60% {
+			-webkit-transform: translateY(-7%) scaleY(1.12);
+		  }
+
+		  75% {
+			-webkit-transform: translateY(3%);
+		  }
+
+		  100% {
+			-webkit-transform: translateY(0%) scale(1) scaleY(1);
+		  }
+		}
 	</style>
+	<!-- CSS -->
+	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" onload="this.rel='stylesheet'"/>
+	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" onload="this.rel='stylesheet'"/>
+	<link rel="preload" href="css/main.css" as="style" onload="this.rel='stylesheet'"/>
+	<noscript>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+		<link href="css/main.css" rel="stylesheet"/>
+	</noscript>
 	<!-- GOOGLE ANALYTICS -->
 </head>
 <body>
