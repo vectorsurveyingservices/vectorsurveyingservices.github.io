@@ -22,7 +22,6 @@ h1, h2, h3, h4, h5 {
 	background-color: #56b64f;
 	box-shadow: 0 6px 0 #008800, 0 15px 20px rgba(0, 0, 0, .35);
 	color: #fff;
-	padding-top: 5px;
 	text-align: center;
 	z-index: 999;
 }
