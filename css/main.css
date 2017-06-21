@@ -13,12 +13,12 @@ h1, h2, h3, h4, h5 {
 
 #to-top {
 	visibility: hidden;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
-	border-radius: 30px;
+	border-radius: 5px;
 	background-color: #56b64f;
 	box-shadow: 0 0 3px rgba(0,0,0,.5);
 	color: #fff;
@@ -52,10 +52,6 @@ h1, h2, h3, h4, h5 {
 #nav-logo {
 	margin-top: -10px;
 	height: 40px;
-}
-
-object {
-	pointer-events: none;
 }
 
 .navbar li { 
