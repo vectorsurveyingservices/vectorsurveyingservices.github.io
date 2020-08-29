@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- META --> 
+	<!-- META -->
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -610,7 +610,7 @@
 		  content: "\f077";
 		}
 	</style>
-	<!-- CSS--> 
+	<!-- CSS-->
 	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" onload="this.rel='stylesheet'"/>
 	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" onload="this.rel='stylesheet'"/>
 	<link rel="preload" href="css/main.css" as="style" onload="this.rel='stylesheet'"/>
@@ -630,7 +630,7 @@
 				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>                        
+					<span class="icon-bar"></span>
 				  </button>
 				  <a class="navbar-brand" href="index.html"><object id="nav-logo" type="image/svg+xml" data="imgs/vector-surveying-services-logo.svg" style="cusor:pointer;">The logo for Vector Surveying Services, LLC.</object></a>
 				</div>
@@ -654,9 +654,9 @@
 		</div>
 		<section id="quote-content" class="copy expandUp">
 			<h1>Request a Free Land Surveying Estimate</h1>
-			<p>Vector Surveying Services gladly provides free price estimates for any survey-related work that you may have. Please enter your name, e-mail address, the location of the property (address or lot number), and a brief description of the type of land survey you require. If you're trying to figure out which steps to take, or don't know which kind of survey you may need, then don't hesitate to call us or leave a message and we'll give you the guidance you seek!</p>
+			<p>Vector Surveying Services gladly provides free price estimates for any survey-related work that you may have. Please enter your name, e-mail address, the location of the property (address or lot number), and a brief description of the type of land survey you require. If you're trying to figure out which steps to take, or don't know which kind of survey you may need, then don’t hesitate to call us or send a message and we’ll give you the guidance you seek! If you’re requesting a quote for a lot split, and have the means to do so, please attach a simple map or sketch indicating what you wish the proposed parcel to look like.</p>
 			<hr/>
-			<form action="https://formspree.io/vectorsurveying@yahoo.com" method="POST"> 
+			<form action="https://formspree.io/vectorsurveying@yahoo.com" method="POST" enctype="multipart/form-data">
 				<div class="form-group">
 					<label for="name"><span class="req">*</span>Name: </label>
 					<input class="form-control" name="name" type="text" required />
@@ -670,12 +670,24 @@
 					<input class="form-control" name="email" type="email" required />
 				</div>
 				<div class="form-group">
-					<label for="_subject"><span class="req">*</span>Location: </label>
+					<label for="_subject"><span class="req">*</span>Street Address: </label>
 					<input class="form-control" name="_subject" type="text" required />
+				</div>
+				<div class="form-group">
+					<label for="city"><span class="req">*</span>City: </label>
+					<input class="form-control" name="city" type="text" required />
+				</div>
+				<div class="form-group">
+					<label for="county"><span class="req">*</span>County: </label>
+					<input class="form-control" name="county" type="text" required />
 				</div>
 				<div class="form-group">
 					<label for="description"> <span class="req">*</span>Description: </label>
 					<textarea name="description" class="form-control"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="attachment"><span class="req">*</span>Upload Files: </label>
+					<input class="form-control" name="attachment" type="file" />
 				</div>
 				<input type="text" name="_gotcha" style="display:none"/>
 				<input type="hidden" name="_next" value="message-sent.html"/>
